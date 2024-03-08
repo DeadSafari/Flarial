@@ -1281,7 +1281,7 @@ FlarialGUI::Dropdown(int index, float x, float y, const std::vector<std::string>
 	float ix = x + Constraints::SpacingConstraint(1.5, textWidth) - is * 1.2;
 	float iy = y + Constraints::SpacingConstraint(0.28, percHeight);
 
-	std::string imageName = "\\Flarial\\assets\\down.png";
+	std::string imageName = "\\k\\assets\\down.png";
 
 	if (ImagesClass::eimages[imageName] == nullptr) {
 		std::string among = Utils::getRoamingPath() + "\\" + imageName;
@@ -1505,7 +1505,7 @@ void FlarialGUI::ColorPicker(const int index, float x, const float y, std::strin
 
 	if (rgb) {
 		FlarialGUI::Image(
-			"\\Flarial\\assets\\rgb.png",
+			"\\k\\assets\\rgb.png",
 			D2D1::RectF(
 				x + Constraints::SpacingConstraint(0.1, s),
 				y + s * 0.21f,
@@ -1712,7 +1712,7 @@ void FlarialGUI::ColorPickerWindow(int index, std::string& hex, float& opacity, 
 
 		// color preview square
 
-		FlarialGUI::Image("\\Flarial\\assets\\transparent.png", D2D1::RectF(
+		FlarialGUI::Image("\\k\\assets\\transparent.png", D2D1::RectF(
 			x + 1,
 			y + 1,
 			x + hexPreviewSize - 1,
@@ -1722,7 +1722,7 @@ void FlarialGUI::ColorPickerWindow(int index, std::string& hex, float& opacity, 
 
 		// previous color preview square
 
-		FlarialGUI::Image("\\Flarial\\assets\\transparent.png", D2D1::RectF(
+		FlarialGUI::Image("\\k\\assets\\transparent.png", D2D1::RectF(
 			x + 1,
 			y + 1 + hexPreviewSize + Constraints::SpacingConstraint(0.1, hexPreviewSize),
 			x + hexPreviewSize - 1,
@@ -2160,7 +2160,7 @@ void FlarialGUI::Image(const std::string imageName, D2D1_RECT_F rect)
 	D2D1_RECT_F imageRect = D2D1::RectF(rect.left, rect.top, rect.right, rect.bottom);
 	D2D1_BITMAP_INTERPOLATION_MODE interpolationMode = D2D1_BITMAP_INTERPOLATION_MODE_LINEAR;
 
-	if (imageName == "\\Flarial\\assets\\transparent.png") interpolationMode = D2D1_BITMAP_INTERPOLATION_MODE_NEAREST_NEIGHBOR;
+	if (imageName == "\\k\\assets\\transparent.png") interpolationMode = D2D1_BITMAP_INTERPOLATION_MODE_NEAREST_NEIGHBOR;
 
 	if (isInScrollView) {
 		if (isRectInRect(ScrollViewRect, rect))
@@ -2622,7 +2622,7 @@ void FlarialGUI::NotifyHeartbeat() {
 			float logoY = Constraints::PercentageConstraint(0.01, "top") - Constraints::SpacingConstraint(0.10, rectHeight);
 			float logoWidth = Constraints::RelativeConstraint(1.25);
 
-			FlarialGUI::Image("\\Flarial\\assets\\logo.png", D2D1::RectF(logoX, logoY, logoX + logoWidth, logoY + logoWidth));
+			FlarialGUI::Image("\\k\\assets\\logo.png", D2D1::RectF(logoX, logoY, logoX + logoWidth, logoY + logoWidth));
 
 			logoX += Constraints::SpacingConstraint(0.85, logoWidth);
 			logoY -= Constraints::SpacingConstraint(0.105, logoWidth);
@@ -2698,7 +2698,7 @@ void FlarialGUI::NotifyHeartbeat() {
 			float logoY = Constraints::PercentageConstraint(0.01, "top") - Constraints::SpacingConstraint(0.10, rectHeight);
 			float logoWidth = Constraints::RelativeConstraint(1.25);
 
-			FlarialGUI::Image("\\Flarial\\assets\\logo.png", D2D1::RectF(logoX, logoY, logoX + logoWidth, logoY + logoWidth));
+			FlarialGUI::Image("\\k\\assets\\logo.png", D2D1::RectF(logoX, logoY, logoX + logoWidth, logoY + logoWidth));
 
 			logoX += Constraints::SpacingConstraint(0.85, logoWidth);
 

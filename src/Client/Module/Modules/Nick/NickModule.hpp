@@ -9,7 +9,7 @@ class NickModule : public Module {
 
 public:
 
-    NickModule() : Module("Nick", "Hides your username and replace it with something else.\nWorks everywhere (chat, pause, third person, etc)\nOther people will not be able to see your nick.", "\\Flarial\\assets\\icognito.png", 'C') {
+    NickModule() : Module("Nick", "Hides your username and replace it with something else.\nWorks everywhere (chat, pause, third person, etc)\nOther people will not be able to see your nick.", "\\k\\assets\\icognito.png", 'C') {
 
         onEnable();
 

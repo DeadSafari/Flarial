@@ -9,7 +9,7 @@ class Zoom : public Module {
 
 public:
 
-    Zoom() : Module("Zoom", "Allows you to see distant places.", "\\Flarial\\assets\\magnify.png", 'C') {
+    Zoom() : Module("Zoom", "Allows you to see distant places.", "\\k\\assets\\magnify.png", 'C') {
 
         onEnable();
 

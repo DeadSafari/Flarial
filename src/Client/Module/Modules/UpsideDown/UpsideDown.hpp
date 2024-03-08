@@ -9,7 +9,7 @@ class UpsideDown : public Module {
 public:
 
 
-	UpsideDown() : Module("Upside Down", "No need to flip your monitor!!", "\\Flarial\\assets\\upside-down.png", 'o') {
+	UpsideDown() : Module("Upside Down", "No need to flip your monitor!!", "\\k\\assets\\upside-down.png", 'o') {
 
 		onEnable();
 

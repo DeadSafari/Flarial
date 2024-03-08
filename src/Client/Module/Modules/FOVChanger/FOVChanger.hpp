@@ -9,7 +9,7 @@ class FOVChanger : public Module {
 public:
 
 
-    FOVChanger() : Module("FOV Changer", "Change your FOV beyond Minecraft's limits.", "\\Flarial\\assets\\field-of-view.png", 'o') {
+    FOVChanger() : Module("FOV Changer", "Change your FOV beyond Minecraft's limits.", "\\k\\assets\\field-of-view.png", 'o') {
 
         onEnable();
 

@@ -13,7 +13,7 @@ public:
 
     }
 
-    Deepfry() : Module("Deepfry", "Theres only one way to find out.", "\\Flarial\\assets\\frying-pan.png", 'b') {
+    Deepfry() : Module("Deepfry", "Theres only one way to find out.", "\\k\\assets\\frying-pan.png", 'b') {
 
         onEnable();
 

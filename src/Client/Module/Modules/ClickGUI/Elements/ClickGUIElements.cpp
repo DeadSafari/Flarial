@@ -161,7 +161,7 @@ std::string ClickGUIElements::SearchBar(int index, std::string& text, int limit,
 
 			}
 
-			FlarialGUI::Image("\\Flarial\\assets\\search.png",
+			FlarialGUI::Image("\\k\\assets\\search.png",
 				D2D1::RectF((x - textWidth) + Constraints::RelativeConstraint(0.245, "height") / 2.0f,
 					y + Constraints::RelativeConstraint(0.245, "height") / 2.0f,
 					((x - textWidth) + Constraints::RelativeConstraint(0.18, "height") / 2.0f) +
@@ -351,7 +351,7 @@ void ClickGUIElements::ModCard(float x, float y, Module* mod, const std::string 
 		FlarialGUI::RoundedRectWithImageAndText(index, settingx2, (buttony - settingswidth) - settingsheightspac,
 			settingswidth, settingswidth,
 			mod4Col,
-			"\\Flarial\\assets\\gear.png", iconwidth, iconwidth, L"");
+			"\\k\\assets\\gear.png", iconwidth, iconwidth, L"");
 
 
 	if (!iconpath.empty() && images[mod->name] == nullptr) {

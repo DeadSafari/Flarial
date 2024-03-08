@@ -29,7 +29,7 @@ public:
         icon = eicon;
         keybind = ekey;
         settings = Settings();
-        settingspath = Utils::getRoamingPath() + "\\Flarial\\Config\\" + name + ".flarial";
+        settingspath = Utils::getRoamingPath() + "\\k\\Config\\" + name + ".flarial";
 
         CheckSettingsFile();
         LoadSettings();

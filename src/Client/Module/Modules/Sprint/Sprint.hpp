@@ -10,7 +10,7 @@ class Sprint : public Module {
 public:
 
 
-    Sprint() : Module("Toggle Sprint", "Automatically sprints for you!!!", "\\Flarial\\assets\\auto_sprint.png", 'M') {
+    Sprint() : Module("Toggle Sprint", "Automatically sprints for you!!!", "\\k\\assets\\auto_sprint.png", 'M') {
 
         onEnable();
 

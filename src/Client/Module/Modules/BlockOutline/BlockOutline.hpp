@@ -7,7 +7,7 @@ class BlockOutline : public Module {
 
 public:
 
-    BlockOutline() : Module("BlockOutline", "Changes the block outline color", "\\Flarial\\assets\\block.png", 'C') {
+    BlockOutline() : Module("BlockOutline", "Changes the block outline color", "\\k\\assets\\block.png", 'C') {
 
         onEnable();
 

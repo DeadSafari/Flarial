@@ -8,7 +8,7 @@ class Hitbox : public Module {
 
 public:
 
-    Hitbox() : Module("Hitbox", "Displays hitboxes of entities", "\\Flarial\\assets\\block.png", 'C') {
+    Hitbox() : Module("Hitbox", "Displays hitboxes of entities", "\\k\\assets\\block.png", 'C') {
 
         onEnable();
 

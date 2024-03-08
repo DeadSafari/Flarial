@@ -9,7 +9,7 @@ class DVD : public Module {
 
 public:
 
-    DVD() : Module("DVD Screen", "Overlays the DVD Screensaver", "\\Flarial\\assets\\skull.png", 'C') {
+    DVD() : Module("DVD Screen", "Overlays the DVD Screensaver", "\\k\\assets\\skull.png", 'C') {
 
         onEnable();
 

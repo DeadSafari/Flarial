@@ -9,7 +9,7 @@ class ClickGUI : public Module {
 
 public:
 
-	ClickGUI() : Module("ClickGUI", "What do you think it is?", "\\Flarial\\assets\\clickgui.png", 'K') {
+	ClickGUI() : Module("ClickGUI", "What do you think it is?", "\\k\\assets\\clickgui.png", 'K') {
 
 		onEnable();
 
@@ -22,9 +22,9 @@ public:
 		EventHandler::registerListener(new ClickGUIRenderer("ClickGUI", this));
 		EventHandler::registerListener(new GUIMouseListener("GUIMouse"));
 
-		if (settings.getSettingByName<std::string>("keybind")->value.empty()) settings.getSettingByName<std::string>("keybind")->value = "K";
+		if (settings.getSettingByName<std::string>("keybind")->value.empty()) settings.getSettingByName<std::string>("keybind")->value = "L";
 
-		if (settings.getSettingByName<std::string>("editmenubind") == nullptr) settings.addSetting("editmenubind", (std::string)"L");
+		if (settings.getSettingByName<std::string>("editmenubind") == nullptr) settings.addSetting("editmenubind", (std::string)"M");
 
 		if (settings.getSettingByName<std::string>("colors_text") == nullptr)
 			settings.addSetting("colors_text", (std::string)"ffffff");
@@ -186,7 +186,7 @@ public:
 
 		FlarialGUI::KeybindSelector(0, x, y, settings.getSettingByName<std::string>("keybind")->value);
 
-		if (settings.getSettingByName<std::string>("keybind")->value.empty()) settings.getSettingByName<std::string>("keybind")->value = "K";
+		if (settings.getSettingByName<std::string>("keybind")->value.empty()) settings.getSettingByName<std::string>("keybind")->value = "L";
 
 		y += Constraints::SpacingConstraint(0.35, textWidth);
 
@@ -196,7 +196,7 @@ public:
 
 		FlarialGUI::KeybindSelector(1, x + Constraints::SpacingConstraint(0.8, textWidth), y, settings.getSettingByName<std::string>("editmenubind")->value);
 
-		if (settings.getSettingByName<std::string>("editmenubind")->value.empty()) settings.getSettingByName<std::string>("editmenubind")->value = "L";
+		if (settings.getSettingByName<std::string>("editmenubind")->value.empty()) settings.getSettingByName<std::string>("editmenubind")->value = "M";
 
 		float rectY = Constraints::PercentageConstraint(0.35, "top");
 		float rectX = x;

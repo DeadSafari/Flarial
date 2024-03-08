@@ -8,7 +8,7 @@ class PaperDoll : public Module {
 
 public:
 
-    PaperDoll() : Module("Movable Paperdoll", "Makes the Minecraft paperdoll movable.", "\\Flarial\\assets\\man.png", 'Y') {
+    PaperDoll() : Module("Movable Paperdoll", "Makes the Minecraft paperdoll movable.", "\\k\\assets\\man.png", 'Y') {
 
         onEnable();
 

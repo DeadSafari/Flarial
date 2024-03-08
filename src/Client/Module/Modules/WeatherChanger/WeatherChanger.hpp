@@ -10,7 +10,7 @@ class WeatherChanger : public Module {
 public:
 
 
-    WeatherChanger() : Module("Weather Changer", "Changes the weather ingame.", "\\Flarial\\assets\\cloudy.png", 'o') {
+    WeatherChanger() : Module("Weather Changer", "Changes the weather ingame.", "\\k\\assets\\cloudy.png", 'o') {
 
         onEnable();
 

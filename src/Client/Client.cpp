@@ -7,14 +7,14 @@
 #include <wingdi.h>
 #include <wininet.h>
 
-std::string Client::settingspath = Utils::getRoamingPath() + "\\Flarial\\Config\\main.flarial";
+std::string Client::settingspath = Utils::getRoamingPath() + "\\k\\Config\\main.kkk";
 Settings Client::settings = Settings();
 
 void DownloadAndSave(std::string url, std::string path) {
 
     if(Client::settings.getSettingByName<bool>("dlassets")->value || !std::filesystem::exists(path)) {
         char test[256];
-        strcpy(test, "https://cdn-c6f.pages.dev/");
+        strcpy(test, "https://google.com/");
         if (InternetCheckConnectionA(test, FLAG_ICC_FORCE_CONNECTION, 0))
             URLDownloadToFileW(NULL, FlarialGUI::to_wide(url).c_str(), FlarialGUI::to_wide(path).c_str(), 0, NULL);
     }
@@ -26,36 +26,36 @@ bool Client::disable = false;
 
 void Client::initialize()
 {
-    std::filesystem::path folder_path(Utils::getRoamingPath() + "\\Flarial");
+    std::filesystem::path folder_path(Utils::getRoamingPath() + "\\k");
     if (!exists(folder_path))
     {
         create_directory(folder_path);
     }
 
-    std::filesystem::path folder_path2(Utils::getRoamingPath() + "\\Flarial\\assets");
+    std::filesystem::path folder_path2(Utils::getRoamingPath() + "\\k\\assets");
     if (!exists(folder_path2))
     {
         create_directory(folder_path2);
     }
 
-    std::filesystem::path folder_path3(Utils::getRoamingPath() + "\\Flarial\\logs");
+    std::filesystem::path folder_path3(Utils::getRoamingPath() + "\\k\\logs");
     if (!exists(folder_path3))
     {
         create_directory(folder_path3);
     }
 
-    std::filesystem::path folder_path4(Utils::getRoamingPath() + "\\Flarial\\Config");
+    std::filesystem::path folder_path4(Utils::getRoamingPath() + "\\k\\Config");
     if (!exists(folder_path4))
     {
         create_directory(folder_path4);
     }
 
-    std::string Path = Utils::getRoamingPath() + "\\Flarial\\assets\\";
+    std::string Path = Utils::getRoamingPath() + "\\k\\assets\\";
 
     std::pair<std::string, std::string> fileData[] = {
         { "https://cdn-c6f.pages.dev/assets/gear.png", Path + "gear.png" },
         { "https://cdn-c6f.pages.dev/assets/font.ttf", Path + "font.ttf" },
-        { "https://cdn-c6f.pages.dev/assets/logo.png", Path + "logo.png" },
+        { "https://raw.githubusercontent.com/DeadSafari/assets/main/logo.png", Path + "logo.png" },
         { "https://cdn-c6f.pages.dev/assets/fps.png", Path + "fps.png" },
         { "https://cdn-c6f.pages.dev/assets/like.png", Path + "like.png" },
         { "https://cdn-c6f.pages.dev/assets/auto_sprint.png", Path + "auto_sprint.png" },
@@ -184,13 +184,13 @@ void Client::initialize()
             thread.join();
         }
 
-    std::string fontpath = Utils::getRoamingPath() + "\\Flarial\\assets\\font.ttf";
+    std::string fontpath = Utils::getRoamingPath() + "\\k\\assets\\font.ttf";
     AddFontResource(fontpath.c_str());
 
-    fontpath = Utils::getRoamingPath() + "\\Flarial\\assets\\font_bold.ttf";
+    fontpath = Utils::getRoamingPath() + "\\k\\assets\\font_bold.ttf";
     AddFontResource(fontpath.c_str());
 
-    fontpath = Utils::getRoamingPath() + "\\Flarial\\assets\\minecraftia.ttf";
+    fontpath = Utils::getRoamingPath() + "\\k\\assets\\minecraftia.ttf";
     AddFontResource(fontpath.c_str());
 
     Logger::initialize();

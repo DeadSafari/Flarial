@@ -13,7 +13,7 @@ public:
 
     }
 
-    HueChanger() : Module("Saturation", "A filter to saturate or\ndesaturate Minecraft.", "\\Flarial\\assets\\fullbright.png", 'b') {
+    HueChanger() : Module("Saturation", "A filter to saturate or\ndesaturate Minecraft.", "\\k\\assets\\fullbright.png", 'b') {
 
         onEnable();
 

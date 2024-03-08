@@ -11,7 +11,7 @@ class TabList : public Module {
 public:
 
 
-    TabList() : Module("Tab List", "Java-like tab list.\nLists the current online players on the server.", "\\Flarial\\assets\\list.png", 'o') {
+    TabList() : Module("Tab List", "Java-like tab list.\nLists the current online players on the server.", "\\k\\assets\\list.png", 'o') {
 
         onEnable();
 
@@ -329,7 +329,7 @@ public:
                         float xx = 0;
 
                         if (it != ModuleManager::OnlineUsers.end()) {
-                            FlarialGUI::Image("\\Flarial\\assets\\logo.png", D2D1::RectF(fakex + Constraints::SpacingConstraint(0.2, keycardSize), realcenter.y +
+                            FlarialGUI::Image("\\k\\assets\\logo.png", D2D1::RectF(fakex + Constraints::SpacingConstraint(0.2, keycardSize), realcenter.y +
                                 Constraints::SpacingConstraint(0.12, keycardSize), fakex + Constraints::SpacingConstraint(1.1, keycardSize), realcenter.y +
                                 Constraints::SpacingConstraint(1.22, keycardSize)));
 

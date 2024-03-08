@@ -71,7 +71,7 @@ public:
 		if (SDK::clientInstance->getTopScreenName() == "inventory_screen" ||
 			SDK::CurrentScreen.find("chest") != std::string::npos)
 			if (Client::settings.getSettingByName<bool>("watermark")->value)
-				FlarialGUI::Image("\\Flarial\\assets\\flarial-title.png",
+				FlarialGUI::Image("\\k\\assets\\k-title.png",
 					D2D1::RectF(allahuakbar.x, allahuakbar.y, allahuakbar.x + allahu,
 						allahuakbar.y + akbar));
 
@@ -166,7 +166,7 @@ public:
 			float logoY = (navy + navigationBarHeight / 2.0f - logoWidth / 2.0f);
 
 			if (!Client::settings.getSettingByName<bool>("noicons")->value)
-				FlarialGUI::Image("\\Flarial\\assets\\logo.png",
+				FlarialGUI::Image("\\k\\assets\\logo.png",
 					D2D1::RectF(logoX, logoY, logoX + logoWidth, logoY + logoWidth));
 
 			FlarialGUI::Tooltip("easter egg", logoX, logoY, "Never gonna give you up", logoWidth, logoWidth);
@@ -224,7 +224,7 @@ public:
 			radioY -= Constraints::SpacingConstraint(-0.15f, logoWidth);
 
 			if (!Client::settings.getSettingByName<bool>("noicons")->value)
-				FlarialGUI::Image("\\Flarial\\assets\\modules.png",
+				FlarialGUI::Image("\\k\\assets\\modules.png",
 					D2D1::RectF(radioX, radioY, radioX + logoWidth, radioY + logoWidth));
 
 
@@ -259,7 +259,7 @@ public:
 			radioY -= Constraints::SpacingConstraint(-0.15f, logoWidth);
 
 			if (!Client::settings.getSettingByName<bool>("noicons")->value)
-				FlarialGUI::Image("\\Flarial\\assets\\gear.png",
+				FlarialGUI::Image("\\k\\assets\\gear.png",
 					D2D1::RectF(radioX, radioY, radioX + logoWidth, radioY + logoWidth));
 
 			radioX = navx - Constraints::SpacingConstraint(-0.85f, logoWidth);
@@ -290,7 +290,7 @@ public:
 			radioY -= Constraints::SpacingConstraint(-0.15f, logoWidth);
 
 			if (!Client::settings.getSettingByName<bool>("noicons")->value)
-				FlarialGUI::Image("\\Flarial\\assets\\pencil.png",
+				FlarialGUI::Image("\\k\\assets\\pencil.png",
 					D2D1::RectF(radioX, radioY, radioX + logoWidth, radioY + logoWidth));
 
 			/* tab buttons end */

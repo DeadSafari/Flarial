@@ -8,7 +8,7 @@ class FogColor : public Module {
 
 public:
 
-    FogColor() : Module("Fog Color", "Changes the color of the\nMinecraft fog.", "\\Flarial\\assets\\smoke.png", 'C') {
+    FogColor() : Module("Fog Color", "Changes the color of the\nMinecraft fog.", "\\k\\assets\\smoke.png", 'C') {
 
         onEnable();
 

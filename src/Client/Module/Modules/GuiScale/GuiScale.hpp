@@ -8,7 +8,7 @@ class GuiScale : public Module {
 
 public:
 
-    GuiScale() : Module("MC GUI Scale", "Change your GUI Scale beyond\nMinecraft's restrictions.", "\\Flarial\\assets\\nametag.png", 'C') {
+    GuiScale() : Module("MC GUI Scale", "Change your GUI Scale beyond\nMinecraft's restrictions.", "\\k\\assets\\nametag.png", 'C') {
 
         onEnable();
 
