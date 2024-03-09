@@ -2608,7 +2608,7 @@ void FlarialGUI::NotifyHeartbeat() {
 
 			D2D::context->PushAxisAlignedClip(cutoutrect, D2D1_ANTIALIAS_MODE_PER_PRIMITIVE);
 
-			col = colors_primary1_rgb ? rgbColor : colors_primary1;
+			col = FlarialGUI::HexToColorF("#FF0000");
 			col.a = o_colors_primary1;
 			FlarialGUI::RoundedRect(notif.currentPos, notif.currentPosY,
 				col, rectWidth,
@@ -2684,7 +2684,7 @@ void FlarialGUI::NotifyHeartbeat() {
 
 			D2D::context->PushAxisAlignedClip(cutoutrect, D2D1_ANTIALIAS_MODE_PER_PRIMITIVE);
 
-			col = colors_primary1_rgb ? rgbColor : colors_primary1;
+			col = FlarialGUI::HexToColorF("#FF0000");
 			col.a = o_colors_primary1;
 			FlarialGUI::RoundedRect(notif.currentPos, notif.currentPosY,
 				col, rectWidth,
